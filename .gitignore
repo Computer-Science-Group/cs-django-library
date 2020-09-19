@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Local file for Spounka to ignore
+.python-version
+
+# Env file for loading / reading the database
+.env
