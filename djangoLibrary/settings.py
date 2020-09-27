@@ -41,7 +41,6 @@ else:
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'z5owhg_)$5wf+zj+gqlv-_t6q!iu3j6)arm(!$m9hv+2!=xtc@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -58,6 +57,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    # We add our web application to settings to be detected
+    'bookStore.apps.BookstoreConfig'
 ]
 
 MIDDLEWARE = [
