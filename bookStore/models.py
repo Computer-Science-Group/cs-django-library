@@ -14,3 +14,13 @@ class Tag(models.Model):
     # Function that defines the row name in the database
     def __str__(self):
         return self.tagName
+
+
+class Category(models.Model):
+    name = models.CharField(max_length=255)
+    description = models.CharField(max_length=1000)
+
+    # a function to display the category like this example below
+    # Adventure: this category is about journeys and fiction ...
+    def __str__(self):
+        return self.name + ': ' + self.description
