@@ -23,4 +23,19 @@ class Category(models.Model):
     # a function to display the category like this example below
     # Adventure: this category is about journeys and fiction ...
     def __str__(self):
-        return self.name + ': ' + self.description
+        return self.name + ': ' + self.descriptions
+
+class Book(models.Model):
+     title=models.CharField(max_length=100)
+     ISBN=models.CharField(max_length=13)
+     category=models.CharField(max_length=30)
+     authors=models.CharField(max_length=30)
+     editor=models.CharField(max_length=30)
+     description=models.CharField(max_length=255)
+     coverImage=models.CharField(max_length=255)
+     year=models.IntegerField()
+
+     def __str__(self):
+        return self.title + ': ' + self.ISBN + ': ' + self.category + ': ' + self.authors+ ': ' + self.editor+ ': ' + self.descriptionmodels+ ': ' + self.coverImage+ ': ' + self.year
+    
+
