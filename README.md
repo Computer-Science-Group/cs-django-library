@@ -96,4 +96,7 @@ If it runs without errors, open your browser to your
 
 ---
 ### Congrats, now you can start working
+---
+# How to contribute ?
 
+Please see the [Contribute](./CONTRIBUTE.md) for more information
